@@ -1,0 +1,52 @@
+.contacts {
+  background: var(--bg-blue);
+  padding: 2rem;
+}
+
+.contacts h2 {
+  text-align: center;
+}
+
+.contacts h2 span {
+  color: #d9b310;
+}
+
+.contacts .box-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.contacts .box-container a {
+  font-size: 5rem;
+  color: var(--dark-blue);
+}
+
+.facebook-icon,
+.instagram-icon,
+.linkedin-icon,
+.github-icon {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contacts{
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts .box-container a{
+    font-size: 3rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .contacts h2{
+    font-size: 1.5rem;
+  }
+  .contacts .box-container a {
+    font-size: 2rem;
+  }
+  
+}

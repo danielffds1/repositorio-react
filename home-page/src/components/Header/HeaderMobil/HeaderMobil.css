@@ -1,0 +1,52 @@
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999 !important;
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: translateX(-100vw);
+  }
+
+  .mobile-menu-container{
+    width: 30vw;
+    height: 100vh;
+    background-color: #343864;
+    padding: 2rem;
+  }
+  
+  .mobile-menu.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .mobine-menu img{
+    margin-bottom: 3rem;
+  }
+  
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+    margin-top: 2rem;
+  }
+
+  a.h-menu-item{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-white);
+    position: relative;
+    cursor: pointer;
+  }
+
+  @media (max-width: 769px) {
+    .mobile-menu {
+      display: block;
+    }
+  }

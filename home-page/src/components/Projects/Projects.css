@@ -1,0 +1,35 @@
+.p-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-yellow);
+}
+
+.p-container p{
+    margin-top: 2rem;
+}
+
+.p-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--bg-yellow);
+    border-radius: 0.65rem;
+    padding: 1.5rem;
+    margin: 1rem 1rem;
+}
+
+@media (max-width: 768px){
+    .p-card{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 440px){
+    .p-container p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
