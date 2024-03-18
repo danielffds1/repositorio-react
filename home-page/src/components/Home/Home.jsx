@@ -30,7 +30,7 @@ const Home = () => {
                     </div>
 
                     <button className='button'>
-                    <a href="https://drive.google.com/file/d/1rPBOEMGV50OyP5HQiiE-K_M-zKyNqyoa/view?usp=drive_link" target="_blank">Download do arquivo</a>
+                    <a href="https://drive.google.com/file/d/1rPBOEMGV50OyP5HQiiE-K_M-zKyNqyoa/view?usp=drive_link" target="_blank" rel="noreferrer">Download do arquivo</a>
 
                     </button>
                 </div>
