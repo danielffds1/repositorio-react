@@ -18,14 +18,14 @@ const Footer = () => {
         
         <div className="box">
           <h3>Contatos</h3>
-          <a href="#"><FontAwesomeIcon icon={faPhone} className="fa-angle-right"/> (31) 98703-2776</a>
-          <a href="#"><FontAwesomeIcon icon={faEnvelope} className="fa-angle-right"/> danielffds6@gmail.com</a>
+          <a href="/"><FontAwesomeIcon icon={faPhone} className="fa-angle-right"/> (31) 98703-2776</a>
+          <a href="/"><FontAwesomeIcon icon={faEnvelope} className="fa-angle-right"/> danielffds6@gmail.com</a>
         </div>
 
         <div className="box">
           <h3>Redes Sociais</h3>
-          <a href="#"><FontAwesomeIcon icon={faFacebookF} className="fa-angle-right"/> Facebook</a>
-          <a href="#"><FontAwesomeIcon icon={faInstagram} className="fa-angle-right"/> Instagram</a>
+          <a href="/"><FontAwesomeIcon icon={faFacebookF} className="fa-angle-right"/> Facebook</a>
+          <a href="/"><FontAwesomeIcon icon={faInstagram} className="fa-angle-right"/> Instagram</a>
           <a href="https://www.linkedin.com/in/danielffds"><FontAwesomeIcon icon={faLinkedin} className="fa-angle-right"/> Linkedin</a>
           <a href="https://github.com/danielffds1/landing-page.git"><FontAwesomeIcon icon={faGithub} className="fa-angle-right"/> Github</a>
         </div>
