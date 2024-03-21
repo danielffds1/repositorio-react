@@ -1,0 +1,115 @@
+.h-header{
+  background: var(--background-nav);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.h-nav ul{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.h-nav ul li a{
+  color: var(--color-white);
+  font-size: 3rem;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+.h-search{
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top;
+}
+
+.h-search input{
+  width: 80%;
+  height: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background: var(--background-body);
+}
+
+.h-search .search-label{
+  background: var(--btn);
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.h-search .search-label label{
+  font-size: 2rem;
+  color: var(--color-white);
+  margin: auto 0;
+  cursor: pointer;
+}
+
+#menu-btn{
+  font-size: 3rem;
+  color: var(--color-white);
+  display: none;
+}
+
+#search-btn{
+  font-size: 3rem;
+  color: var(--color-white);
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .h-header img{
+    height: 4rem;
+  }
+  .h-nav ul li a{
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .h-header img{
+    height: 4rem;
+  }
+
+  .h-nav ul{
+    display: none;
+  }
+
+  .h-icons {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  #menu-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  #search-btn {
+    display: inline-block;
+    margin: .4rem;
+  }
+
+  .h-search {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 40rem;
+    height: 5rem;
+  }
+
+  .h-search.active {
+    right: 1rem;
+    top: 10rem;
+  }
+}
