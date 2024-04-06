@@ -1,0 +1,131 @@
+.navbar{
+    background: var(--background-nav);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+}
+.navbar .logo{
+    width: 200px;
+    padding: 1rem;
+}
+.navbar .logo img{
+    width: 80%;
+}
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    font-size: 18px;
+    color: var(--color-white);
+    cursor: pointer;
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 10px;
+}
+.navbar-right input{
+    padding: 12px 5px;
+    outline: none;
+    padding-left: 10px;
+    background-color: var(--background-body);
+}
+.navbar-right input:hover{
+    background-color: var(--color-white);
+}
+.navbar-right .navbar-serach{
+    background-color: var(--btn);
+    padding: 9px 5px;
+    border-radius: 0px 5px 5px 0px;
+    width: max(4vw, 60px);
+    display: flex;
+    justify-content: center;
+}
+.navbar-right .navbar-serach img{
+    width: 20px;
+}
+.navbar .active{
+    padding: 2px;
+    border-bottom: 2px solid var(--btn);
+    transition: 0.3s;
+}
+.navbar-dropdown{
+    width: 35px;
+    height: 25px;
+    margin-top: center;
+    display: none;
+}
+@media (max-width: 1280px){
+    .navbar{
+        padding: 12px 50px;
+    }
+}
+@media (max-width: 800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+    .navbar-dropdown{
+        display: block;
+        transition: 0.5s;
+    }
+    .navbar-menu{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 20%;
+        height: 50vh;
+        justify-content: start;
+        top: 100px;
+        right: 0px;
+        background-color: var(--background-nav);
+    }
+    .navbar-menu li{
+        padding: 10px;
+    }
+    .navbar-menu-visible{
+        display: flex;
+    }
+    .navbar-dropdown.open{
+        transform: rotate(180deg);
+    }
+    .navbar-right input{
+        width: 100px;
+    }
+    .navbar-right .navbar-serach{
+        width: 40px;
+        padding: 10px 0px;
+    }
+}
+@media (max-width: 500px){
+    .navbar{
+        padding: 8px 0px;
+    }
+    .navbar .logo{
+        width: 150px;
+    }
+    .navbar-dropdown{
+        width: 25px;
+        height: 20px;
+    }
+    .navbar-menu{
+        top: 80px;
+    }
+    .navbar-right input{
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .navbar-right .navbar-serach{
+        height: 30px;
+        align-items: center;
+    }
+    .navbar-right .navbar-serach img{
+        width: 15px;
+        height: 20px;
+    }
+}
