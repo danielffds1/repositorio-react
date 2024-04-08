@@ -1,0 +1,139 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    background: var(--background-body);
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 80px;
+    line-height: 1.1;
+}
+.hero-left h2{
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: normal;
+}
+.hero-left .hero-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.hero-left .hero-btn button{
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .3s;
+}
+.hero-left .hero-btn button:hover{
+    scale: 1.1;
+}
+.hero-left .hero-btn button:nth-child(1){
+    background: var(--btn);
+    border: var(--border);
+}
+.hero-left .hero-btn button:nth-child(2){
+    background: transparent;
+    border: 1px solid var(--color-white);
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-right img{
+    height: 70%;
+    object-fit: cover;
+}
+@media(max-width: 1024px){
+    .hero{
+        height: 80vh;
+    }
+    .hero-left{
+        padding-left: 60px;
+        height: 80%;
+    }
+    .hero-left h2{
+        font-size: 30px;
+    }
+    .hero-left p{
+        font-size: 14px;
+    }
+    .hero-left .hero-btn button{
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
+    .hero-right{
+        height: 80%;
+    }
+    .hero-right img{
+        height: 80%;
+        object-fit: cover;
+    }
+}
+@media(max-width: 800px){
+    .hero{
+        height: 70vh;
+    }
+    .hero-left{
+        padding-left: 40px;
+        margin-top: -20px;
+    }
+    .hero-left h2{
+        font-size: 20px;
+    }
+    .hero-left p{
+        font-size: 12px;
+    }
+    .hero-left .hero-btn button{
+        width: 110px;
+        height: 35px;
+        font-size: 12px;
+    }
+}
+@media(max-width: 500px){
+    .hero{
+        flex-direction: column;
+        height: 70vh;
+        padding: 0px 20px;
+    }
+    .hero-left{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .hero-left h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .hero-left p{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .hero-left .hero-btn button{
+        width: 110px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .hero-right{
+        height: 50%;
+        align-items: start;
+    }
+    .hero-right img{
+        height: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { assets } from '../../assets/assets'
 import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -19,10 +20,10 @@ const Navbar = () => {
         <img className='logo' src={assets.logo} alt="Logo do website" />
       </div>
       <ul ref={menuRef} className="navbar-menu">
-        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}>home</li>
-        <li onClick={()=>setMenu("sobre")} className={menu==="sobre"?"active":""}>Sobre</li>
-        <li onClick={()=>setMenu("servico")} className={menu==="servico"?"active":""}>Serviços</li>
-        <li onClick={()=>setMenu("contato")} className={menu==="contato"?"active":""}>Contato</li>
+        <li onClick={()=>setMenu("home")} className={menu==="home"?"active":""}><Link to="/" >Home</Link></li>
+        <li onClick={()=>setMenu("sobre")} className={menu==="sobre"?"active":""}><Link to="/about" >Sobre</Link></li>
+        <li onClick={()=>setMenu("servico")} className={menu==="servico"?"active":""}><Link to="/servicesProduct" >Serviços</Link></li>
+        <li onClick={()=>setMenu("contato")} className={menu==="contato"?"active":""}><Link to="/contact" >Contato</Link></li>
       </ul>
       <div className="navbar-right">
         <input type="text" placeholder='Busca' />
