@@ -127,3 +127,56 @@ export const recentPosts =
     description: "Em nosso blog, destacamos a importância dos nossos veterinários de excelência. Conheça mais sobre suas qualificações e experiência em cuidar dos animais. #Veterinária #CuidadosAnimais"
   }
 ];
+
+import servicespet1 from './servicespet1.jpg';
+import servicespet2 from './servicespet2.jpg';
+import servicespet3 from './servicespet3.jpg';
+import servicespet4 from './servicespet4.jpg';
+import servicespet5 from './servicespet5.jpg';
+import servicespet6 from './servicespet6.jpg';
+
+export const availableServices = 
+[
+  {
+    id: 1,
+    image: servicespet1,
+    title: "Banho e tosa",
+    description: "Ofereça serviços de banho e tosa profissionais para cães e gatos, incluindo corte de unhas, limpeza de ouvidos e tratamento de pelagem",
+    price: 100
+  },
+  {
+    id: 2,
+    image: servicespet2,
+    title: "Consulta Veterinária",
+    description: "Se possível, ofereça consultas veterinárias para serviços básicos, como vacinação, exames de saúde e tratamento de problemas de pele ou ouvido.",
+    price: 100
+  },
+  {
+    id: 3,
+    image: servicespet3,
+    title: "Hospedagem",
+    description: "Oferecemos serviços de hospedagem para animais de estimação quando os donos precisarem viajar ou se ausentar por um período.",
+    price: 100
+  },
+  {
+    id: 4,
+    image: servicespet4,
+    title: "Treinamento e Comportamento",
+    description: "Ofereça aulas de treinamento para cães, seja para obediência básica, socialização ou correção de comportamentos indesejados.",
+    price: 100
+  },
+  {
+    id: 5,
+    image: servicespet5,
+    title: "Serviços de Emergência:",
+    description: "Tenha um plano de ação para lidar com emergências veterinárias e ofereça serviços de primeiros socorros, como curativos e estabilização, antes de encaminhar o animal para um veterinário.",
+    price: 100
+  },
+  {
+    id: 6,
+    image: servicespet6,
+    title: "Creche",
+    description: "Para clientes que precisam deixar seus animais de estimação durante o dia, ofereça serviços de creche onde os pets podem socializar e se exercitar sob supervisão.",
+    price: 100
+  }
+]

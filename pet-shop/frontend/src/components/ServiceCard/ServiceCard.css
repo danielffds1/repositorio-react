@@ -1,0 +1,41 @@
+.service-card-content{
+    background-color: var(--background-body);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+}
+.service-card-item{
+    background-color: var(--btn);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.service-card-img-container{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+.service-item-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.service-card-item-info h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+.service-card-item-info p:nth-child(2){
+    font-size: 1rem;
+    color: var(--color-paragraph);
+    margin-bottom: 1rem;
+}
+.service-card-item-price{
+    font-size: 1rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
